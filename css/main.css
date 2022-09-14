@@ -793,6 +793,7 @@ footer p:nth-child(2) {
   }
   .nav img {
     width: 125px !important;
+    margin-right: 10%;
   }
   .nav .bar-menu {
     position: absolute;
