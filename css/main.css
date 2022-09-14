@@ -278,6 +278,9 @@
   color: #104a8e;
   transition: 0.5s;
 }
+.hidden {
+  z-index: 5;
+}
 .navbar .nav .hidden li a {
   margin-left: 20px;
 }
@@ -295,7 +298,7 @@
   align-self: center;
   text-align: center;
   position: relative;
-  top: 30%;
+  top: 15%;
   margin-left: 25%;
 }
 
@@ -328,6 +331,10 @@
   font-weight: bold;
 }
 
+.nav img {
+  z-index: 3;
+  cursor: pointer;
+}
 /* End Navbar Section */
 
 /* Stat About Section */

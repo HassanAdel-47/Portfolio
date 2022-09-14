@@ -13,21 +13,22 @@ btn.onclick = function () {
     behavior: "smooth",
   });
 };
-// var myCheck = document.getElementById("switcher");
-// myCheck.onclick = function (element) {
-//   console.log("Agreement changed to " + myCheck.checked + " by onclick event.");
-//   if (myCheck.checked == true) {
-//     setTimeout(function () {
-//       window.open("./index ar.html", "_self");
-//     }, 1000);
-//   } else {
-//     setTimeout(function () {
-//       window.open("./index.html", "_self");
-//     }, 1000);
-//   }
-// };
+
+var myCheck = document.getElementById("switcher");
+myCheck.onclick = function (element) {
+  console.log("Agreement changed to " + myCheck.checked + " by onclick event.");
+  if (myCheck.checked == true) {
+    setTimeout(function () {
+      window.open("./index ar.html", "_self");
+    }, 1000);
+  } else {
+    setTimeout(function () {
+      window.open("./index.html", "_self");
+    }, 1000);
+  }
+};
 
 $(window).on("load", function () {
   $(".loader-wrapper").fadeOut("slow");
+  console.log("Ok");
 });
-
