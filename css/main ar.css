@@ -872,7 +872,17 @@ footer p:nth-child(2) {
   }
   /* End Service */
   /* Start portfolio */
+  .portfolio .imgs-container .folio-box .caption {
+    top: 0;
+    opacity: 0.1;
+  }
 
+  .portfolio .imgs-container .folio-box .caption h4 {
+    display: none;
+  }
+  .portfolio .imgs-container .folio-box .caption p {
+    display: none;
+  }
   /* End portfolio */
   /* Start Contact Me  */
   .contact-me p {
@@ -905,15 +915,6 @@ footer p:nth-child(2) {
   }
   .portfolio .imgs-container .folio-box:hover .caption {
     bottom: -80px !important;
-  }
-}
-
-@media (max-width: 412px) {
-  .portfolio .imgs-container .folio-box .caption h4 {
-    font-size: 10px;
-  }
-  .portfolio .imgs-container .folio-box .caption p {
-    font-size: 7px;
   }
 }
 
