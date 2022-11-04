@@ -346,10 +346,7 @@
 }
 
 .about img {
-  width: 25%;
-  height: 50%;
-  margin-right: 8%;
-  border-radius: 40px;
+  width: 400px;
 }
 
 .about-text {
@@ -834,7 +831,7 @@ footer p:nth-child(2) {
     align-content: center;
   }
   .about img {
-    width: 350px;
+    width: 400px;
     margin-right: 0;
   }
   .about h2 {
