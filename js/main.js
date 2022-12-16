@@ -16,7 +16,6 @@ btn.onclick = function () {
 
 var myCheck = document.getElementById("switcher");
 myCheck.onclick = function (element) {
-  console.log("Agreement changed to " + myCheck.checked + " by onclick event.");
   if (myCheck.checked == true) {
     setTimeout(function () {
       window.open("./index ar.html", "_self");
@@ -30,5 +29,4 @@ myCheck.onclick = function (element) {
 
 $(window).on("load", function () {
   $(".loader-wrapper").fadeOut("slow");
-  console.log("Ok");
 });
