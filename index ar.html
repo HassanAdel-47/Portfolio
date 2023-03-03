@@ -24,9 +24,9 @@
     rel="stylesheet">
   <!-- animate -->
   <link rel="stylesheet" href="css/animate.min.css" />
- <!--Visits-->
- <script async
- src="https://api.countapi.xyz/hit/HassanWebPortfolio.com/15aa6e21-da98-4fc0-80da-c97039caed56?callback=websiteVisits"></script>
+  <!--Visits-->
+  <script async
+    src="https://api.countapi.xyz/hit/HassanWebPortfolio.com/15aa6e21-da98-4fc0-80da-c97039caed56?callback=websiteVisits"></script>
 </head>
 
 <body>
@@ -58,7 +58,7 @@
         <span class="switch-lang wow fadeInDown" data-wow-delay="1s">
           <input type="checkbox" id="switcher" value="bar" checked="">
           <label for="switcher"></label>
-      </span>
+        </span>
 
         <!--Laptop Menu-->
         <ul class="bar-menu hidden wow fadeInDown" data-wow-delay="1s">
@@ -101,11 +101,11 @@
         <h4>مرحباً بكم, اسمي انا</h4>
         <h1>حسّان <span>عادل</span></h1>
         <h3> مطور ويب ومصمم</h3>
-         <!--Visits-->
-         <div class="viewed fadeInUp wow" data-wow-delay="2s">
-           <div>
-          
-         تمت زيارة المعرض <span id="visits"></span> مرة 
+        <!--Visits-->
+        <div class="viewed fadeInUp wow" data-wow-delay="2s">
+          <div>
+
+            تمت زيارة المعرض <span id="visits"></span> مرة
 
             <!-- <i class="fa fa-eye" aria-hidden="true"></i> -->
           </div>
@@ -187,64 +187,61 @@
       </div>
 
       <div class="imgs-container">
-        <div class="folio-box wow fadeInLeft" data-wow-delay="1s">
-          <div class="overlay"></div>
-          <img src="img/a1.jpg" />
-          <a href="https://hassanadel-47.github.io/GraphicPortfolio/" target="_blank" class="caption">
-            <!-- <a href="#">Hello</a> -->
-            <h4>My Garaphic Portfolio</h4>
-            <p><i class="fa-solid fa-heart"></i></p>
-          </a>
-        </div>
-        <div class="folio-box wow fadeInDown" data-wow-delay="1s">
-          <img src="img/a2.jpg" />
-          <div class="overlay"></div>
-          <a href="https://stupendous-lollipop-8db41b.netlify.app/" target="_blank" class="caption">
-            <h4>Vue Calculator</h4>
-            <p><i class="fa-solid fa-heart"></i></p>
-          </a>
-        </div>
-        <div class="folio-box wow fadeInDown" data-wow-delay="1s">
-          <img src="img/a3.png" />
-          <div class="overlay"></div>
-
-          <a href="https://idyllic-choux-43230e.netlify.app" target="_blank" class="caption">
-            <h4>Vue To-Do List</h4>
-            <p><i class="fa-solid fa-heart"></i></p>
-          </a>
-        </div>
-        <div class="folio-box wow fadeInRight" data-wow-delay="1s">
-          <div class="overlay"></div>
-          <img src="img/a4.png" />
-          <a href="https://hassanadel-47.github.io/HERSEYAPP/" target="_blank" class="caption">
-            <h4>HERSEYAPP Website</h4>
-            <p><i class="fa-solid fa-heart"></i></p>
-          </a>
-        </div>
-        <div class="folio-box wow fadeInLeft" data-wow-delay="1s">
-          <div class="overlay"></div>
-          <img src="img/a5.jpg" />
-          <a href="https://hassanadel-47.github.io/Bootstrap-Site/" target="_blank" class="caption">
-            <h4>Bootstrap Website</h4>
-            <p><i class="fa-solid fa-heart"></i></p>
-          </a>
-        </div>
-        <div class="folio-box wow fadeInUp" data-wow-delay="1s">
-          <div class="overlay"></div>
-          <img src="img/a7.jpg" />
-          <a href="#" class="caption">
-            <h4>MY Web Portfolio</h4>
-            <p><i class="fa-solid fa-heart"></i></p>
-          </a>
-        </div>
-        <div class="folio-box wow fadeInRight" data-wow-delay="1s">
-          <div class="overlay"></div>
-          <img src="img/a6.png" />
-          <a href="https://hassanadel-47.github.io/Landing_Page_One/" target="_blank" class="caption">
-            <h4>Landing Page</h4>
-            <p><i class="fa-solid fa-heart"></i></p>
-          </a>
-        </div>
+        <script>
+          var links = [
+            "https://hassanadel-47.github.io/GraphicPortfolio/",
+            "https://stupendous-lollipop-8db41b.netlify.app/",
+            "https://hassanadel-47.github.io/HERSEYAPP/",
+            "https://hassanadel-47.github.io/Bootstrap-Site/",
+            "https://hassanadel-47.github.io/Landing_Page_One/",
+            "https://hassanadel-47.github.io/React-Todo-List/",
+            "https://hassanadel-47.github.io/Fake-API-Store/",
+            "https://hassanadel-47.github.io/Crud-With-Redux/",
+          ];
+          var title = [
+            "My Garaphic Portfolio",
+            "Vue Calculator",
+            "HERSEYAPP Website",
+            "Bootstrap Website",
+            "MY Web Portfolio",
+            "Landing Page",
+            "React Todo List",
+            "Fake API Store",
+            "React CRUD With Redux",
+          ];
+          var imgs = [
+            "img/a1.jpg",
+            "img/a2.jpg",
+            "img/a4.png",
+            "img/a5.jpg",
+            "img/a7.jpg",
+            "img/a6.png",
+            "img/a8.jpg",
+            "img/a9.jpg",
+            "img/a10.jpg",
+          ];
+          for (i = 0; i < links.length; i++) {
+            let imgs_container = document.querySelector(".imgs-container")
+            let folio_box = document.createElement("div")
+            let overlay = document.createElement("div")
+            let img = document.createElement("img")
+            let h4 = document.createElement("h4")
+            let a = document.createElement("a")
+            a.href = links[i]
+            a.target = "_blank"
+            imgs_container.classList.add('imgs-container')
+            folio_box.classList.add("folio-box", "wow", "fadeIn")
+            a.classList.add("caption")
+            img.src = imgs[i]
+            h4.innerHTML = title[i]
+            overlay.classList.add("overlay")
+            imgs_container.append(folio_box)
+            folio_box.append(overlay)
+            folio_box.append(img)
+            folio_box.append(a)
+            a.append(h4)
+          }
+        </script>
 
       </div>
     </div>
@@ -253,7 +250,8 @@
     <!--Start Contact ME Section-->
     <div class="contact-me " id="contact">
       <p class="folio-box wow fadeInDown" data-wow-delay="1s">اتصل بي الان لنصمم موقع جذاب ومتجاوب خاص بك</p>
-      <a  href="https://t.me/Hassan3886 " target="_blank" class="button-two folio-box wow fadeInUp" data-wow-delay="1s">اتصل بي</a>
+      <a href="https://t.me/Hassan3886 " target="_blank" class="button-two folio-box wow fadeInUp"
+        data-wow-delay="1s">اتصل بي</a>
     </div>
     <!--End Contact ME Section-->
 
@@ -275,19 +273,19 @@
     <!--End footer Section-->
 </body>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <!-- fullpage -->
-    <script src="js/jquery.fullPage.js"></script>
-    <!-- smoothScroll -->
-    <script src="js/smoothscroll.js"></script>
-    <!-- wow -->
-    <script src="js/wow.min.js"></script>
-    <!-- text rotater -->
-    <script src="js/jquery.simple-text-rotator.js"></script>
-    <!-- custom -->
-    <script src="js/custom.js"></script>
-    <!--Main-->
-    <script src="js/main.js"></script>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- fullpage -->
+<script src="js/jquery.fullPage.js"></script>
+<!-- smoothScroll -->
+<script src="js/smoothscroll.js"></script>
+<!-- wow -->
+<script src="js/wow.min.js"></script>
+<!-- text rotater -->
+<script src="js/jquery.simple-text-rotator.js"></script>
+<!-- custom -->
+<script src="js/custom.js"></script>
+<!--Main-->
+<script src="js/main.js"></script>
 
 </html>

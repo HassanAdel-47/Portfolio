@@ -366,7 +366,7 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row-reverse;
 }
 
@@ -547,6 +547,7 @@
   flex-direction: row;
   background-color: #191919;
   justify-content: center;
+  margin-top: 20px;
   align-items: center;
 }
 
