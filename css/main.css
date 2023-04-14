@@ -20,7 +20,7 @@
   z-index: 9999;
 }
 .loader {
-  animation: zoom-in-zoom-out 10s infinite ease-in-out;
+  /* animation: zoom-in-zoom-out 10s infinite ease-in-out; */
 }
 
 .loader-text {
